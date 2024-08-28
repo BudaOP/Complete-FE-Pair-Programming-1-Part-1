@@ -1,13 +1,14 @@
-import './App.css';
-import logo from './images/logo.svg';
+import React from 'react';
+import Greetings from './components/Greetings';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <h3>React Practice</h3>
-      <img src={logo} className="App-logo" alt="logo" />
-    </>
+    <div>
+      <h1>Greetings Example</h1>
+      <Greetings lang="de">Ludwig</Greetings>
+      <Greetings lang="fr">François</Greetings>
+    </div>
   );
-}
+};
 
 export default App;
