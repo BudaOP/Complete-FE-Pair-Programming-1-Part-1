@@ -1,12 +1,12 @@
 import React from 'react';
-import Greetings from './components/Greetings';
+import Random from './Random';
 
 const App = () => {
   return (
     <div>
-      <h1>Greetings Example</h1>
-      <Greetings lang="de">Ludwig</Greetings>
-      <Greetings lang="fr">François</Greetings>
+      <h1>Random Example</h1>
+      <Random min={1} max={6} />
+      <Random min={1} max={100} />
     </div>
   );
 };
